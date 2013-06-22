@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>upload</title>
+		<script type="text/javascript" src="js/jquery-1.10.1.js"></script>
+		<script type="text/javascript" src="js/jQuery.md5.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#upload_file").change(function(){
+					//alert(this.files[0].fileSize) ;
+					
+				}) ;
+			}) ;
+			
+		</script>
+    </head>
+    <body>
+    	<form  action="uploadServlet.do" method="post" enctype="multipart/form-data">
+    		name:<input type="text" name="name"/><br/>
+			file:<input type="file" id="upload_file" name="uploadFile"><br/>
+			<input type="submit" value="upload">
+    	</form>
+    </body>
+</html>
