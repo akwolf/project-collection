@@ -1,4 +1,4 @@
-package com.childe.san.upload ;
+package com.chile.san.uploadify ;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -40,9 +40,9 @@ public class FileUploadTools {
 	private HttpServletRequest request;
 	private List<FileItem> items; // 全部上传内容
 	private List<String> fields = new ArrayList<String>() ;
-	private Map<String, List<String>> params = new HashMap<String, List<String>>(); // 保存????参数
+	private Map<String, List<String>> params = new HashMap<String, List<String>>(); // 保存�?��参数
 	private Map<String, FileItem> files = new HashMap<String, FileItem>();
-	private int maxSize = 30 * 1024 * 1024; // 默认????文件体积
+	private int maxSize = 30 * 1024 * 1024; // 默认�?��文件体积
 	private String[] allowedExts = new String[] {};
 
 	private String saveDir = ""; // 文件存储路径
@@ -68,7 +68,6 @@ public class FileUploadTools {
 	public FileUploadTools(HttpServletRequest request, int maxSize,
 			String tempDir, String saveDir) throws FileUploadException,
 			UnsupportedEncodingException {
-		System.out.print(saveDir) ;
 		this.saveDir = saveDir;
 		this.request = request;
 		// 创建临时文件删除程序
@@ -147,7 +146,7 @@ public class FileUploadTools {
 	}
 
 	/**
-	 * 取得单??的表单域,如：type="text"
+	 * 取得单�?的表单域,如：type="text"
 	 * 
 	 * @param name
 	 * @return
@@ -162,7 +161,7 @@ public class FileUploadTools {
 	}
 
 	/**
-	 * 取得多??的表单域,如：type="checkbox"
+	 * 取得多�?的表单域,如：type="checkbox"
 	 * 
 	 * @param name
 	 * @return
@@ -223,7 +222,7 @@ public class FileUploadTools {
 	}
 
 	/**
-	 * 指定存储路径和储存名?? 储存名不用带后缀??
+	 * 指定存储路径和储存名�? 储存名不用带后缀�?
 	 * 
 	 * @param saveDir
 	 *            指定存储路径

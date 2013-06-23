@@ -1,0 +1,28 @@
+<html>
+<head>
+<link id="globalheader-stylesheet" rel="stylesheet" href="uploadify/uploadify.css" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript" src="uploadify/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="uploadify/swfobject.js"></script>
+<script type="text/javascript" src="uploadify/jquery.uploadify.v2.1.4.min.js"></script>
+<script type="text/javascript">
+// <![CDATA[
+$(document).ready(function() {
+  $('#file_upload').uploadify({
+    'uploader'  : 'uploadify/uploadify.swf',
+    'script'    : 'uploadify/uploadServlet.do',
+    'cancelImg' : 'uploadify/cancel.png',
+    'folder'    : 'uploads',
+	'buttonText':'Select File...',
+    'auto'      : true
+  });
+});
+// ]]>
+</script>
+</head>
+
+<body>
+<input id="file_upload" type="file" name="file_upload" />
+</body>
+</html>

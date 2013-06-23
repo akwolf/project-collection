@@ -8,9 +8,9 @@
 		<artifactId>project-collection</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>project-upload</artifactId>
+	<artifactId>project-uploadify</artifactId>
 	<packaging>war</packaging>
-	<name>project-upload Maven Webapp</name>
+	<name>project-uploadify Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
 		<dependency>
@@ -35,14 +35,14 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<finalName>project-upload</finalName>
+		<finalName>project-uploadify</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.mortbay.jetty</groupId>
 				<artifactId>jetty-maven-plugin</artifactId>
 				<configuration>
 					<webAppConfig>
-						<contextPath>/project-upload</contextPath>
+						<contextPath>/project-uploadify</contextPath>
 					</webAppConfig>
 				</configuration>
 			</plugin>
