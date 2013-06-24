@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleName</key>
+	<string>AngryBirdsRioHD</string>
+	<key>DTXcode</key>
+	<string>0410</string>
+	<key>DTSDKName</key>
+	<string>iphoneos4.3</string>
+	<key>UTImportedTypeDeclarations</key>
+	<array>
+	</array>
+	<key>DTSDKBuild</key>
+	<string>8H7</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleVersion</key>
+	<string>1.4.0</string>
+	<key>BuildMachineOSBuild</key>
+	<string>11C74</string>
+	<key>UIStatusBarHidden</key>
+	<true/>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+	</array>
+	<key>CFBundleIconFile</key>
+	<string>Icon-72.png</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>iPhoneOS</string>
+	</array>
+	<key>DTPlatformName</key>
+	<string>iphoneos</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleExecutable</key>
+	<string>AngryBirdsRioHD</string>
+	<key>DTCompiler</key>
+	<string>4.2</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+	</array>
+	<key>CFBundleIdentifier</key>
+	<string>com.rovio.angrybirdsriohd</string>
+	<key>UIPrerenderedIcon</key>
+	<true/>
+	<key>DTPlatformVersion</key>
+	<string>4.3</string>
+	<key>UTExportedTypeDeclarations</key>
+	<array>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>CFBundleDisplayName</key>
+	<string>Angry Birds</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>UIInterfaceOrientation</key>
+	<string>UIInterfaceOrientationLandscapeRight</string>
+	<key>CFBundleResourceSpecification</key>
+	<string>ResourceRules.plist</string>
+	<key>DTXcodeBuild</key>
+	<string>4B110</string>
+	<key>DTPlatformBuild</key>
+	<string>8H7</string>
+	<key>MinimumOSVersion</key>
+	<string>3.2</string>
+	<key>UIDeviceFamily</key>
+	<array>
+		<integer>2</integer>
+	</array>
+</dict>
+</plist>
