@@ -60,6 +60,11 @@
 				<version>1.6.3</version>
 			</dependency>
 			<dependency>
+				<groupId>com.sun.xml.ws</groupId>
+				<artifactId>jaxws-rt</artifactId>
+				<version>2.2.6-5</version>
+			</dependency>
+			<dependency>
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
 				<version>4.10</version>
@@ -130,5 +135,6 @@
 		<module>project-upload</module>
 		<module>project-uploadify</module>
 		<module>project-axis1.4-client</module>
+		<module>project-axis1.4-server</module>
 	</modules>
 </project>
