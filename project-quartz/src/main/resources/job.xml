@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8'?>
+<job-scheduling-data
+	xmlns="http://www.quartz-scheduler.org/xml/JobSchedulingData"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.quartz-scheduler.org/xml/JobSchedulingData http://www.quartz-scheduler.org/xml/job_scheduling_data_1_8.xsd"
+	version="1.8">
+	<pre-processing-commands>
+		<delete-jobs-in-group>*</delete-jobs-in-group>  <!-- clear all jobs in scheduler -->
+		<delete-triggers-in-group>*</delete-triggers-in-group> <!-- clear all triggers in scheduler -->
+	</pre-processing-commands>
+	<processing-directives>
+		<overwrite-existing-data>true</overwrite-existing-data>
+		<ignore-duplicates>false</ignore-duplicates>
+	</processing-directives>
+
+	<schedule>
+		<job>
+			<name>MLClientJob</name>
+			<group>FileBatch</group>
+			<description>定时运行Job</description>
+			<job-class>com.justsy.autoclean.job.MLClientLogCleaner</job-class>
+		</job>
+		<job>
+			<name>MLServerJob</name>
+			<group>FileBatch</group>
+			<description>定时运行Job</description>
+			<job-class>com.justsy.autoclean.job.MLServerLogCleaner</job-class>
+		</job>
+		<job>
+			<name>DBJob</name>
+			<group>FileBatch</group>
+			<description>定时运行Job</description>
+			<job-class>com.justsy.autoclean.job.DBLogCleaner</job-class>
+		</job>
+		<!-- 
+		<job>
+			<name>IntervalJob</name>
+			<group>FileBatch</group>
+			<description>定时运行Job</description>
+			<job-class>com.justsy.autoclean.job.IntervalJob</job-class>
+		</job> -->
+		<trigger>
+			<cron>
+				<name>MLClientTrigger</name>
+				<group>FileBatch</group>
+				<job-name>MLClientJob</job-name>
+				<job-group>FileBatch</job-group>
+				<misfire-instruction>MISFIRE_INSTRUCTION_FIRE_ONCE_NOW</misfire-instruction>
+				<cron-expression>30 6 21 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<trigger>
+			<cron>
+				<name>MLServerTrigger</name>
+				<group>FileBatch</group>
+				<job-name>MLServerJob</job-name>
+				<job-group>FileBatch</job-group>
+				<misfire-instruction>MISFIRE_INSTRUCTION_FIRE_ONCE_NOW</misfire-instruction>
+				<cron-expression>30 50 20 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<trigger>
+			<cron>
+				<name>DBTrigger</name>
+				<group>FileBatch</group>
+				<job-name>DBJob</job-name>
+				<job-group>FileBatch</job-group>
+				<misfire-instruction>MISFIRE_INSTRUCTION_FIRE_ONCE_NOW</misfire-instruction>
+				<cron-expression>30 3 10 * * ?</cron-expression>
+			</cron>
+		</trigger>
+		<!-- 
+		<trigger>
+			<cron>
+				<name>IntervalTrigger</name>
+				<group>FileBatch</group>
+				<job-name>IntervalJob</job-name>
+				<job-group>FileBatch</job-group>
+				<misfire-instruction>MISFIRE_INSTRUCTION_FIRE_ONCE_NOW</misfire-instruction>
+				<cron-expression>0/5 * * * * ?</cron-expression>
+			</cron>
+		</trigger> -->
+	</schedule>
+</job-scheduling-data>

@@ -86,6 +86,16 @@
 				<version>1.6</version>
 			</dependency>
 			<dependency>
+				<groupId>org.quartz-scheduler</groupId>
+				<artifactId>quartz</artifactId>
+				<version>2.1.7</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.transaction</groupId>
+				<artifactId>jta</artifactId>
+				<version>1.1</version>
+			</dependency>
+			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-api</artifactId>
 				<version>${org.slf4j-version}</version>
@@ -165,5 +175,6 @@
 		<module>project-dom4j-offline</module>
 		<module>project-pullxml</module>
 		<module>project-dynamic-interceptor</module>
+		<module>project-quartz</module>
 	</modules>
 </project>
