@@ -110,6 +110,17 @@
 				<artifactId>slf4j-log4j12</artifactId>
 				<version>${org.slf4j-version}</version>
 			</dependency>
+			<!-- android -->
+			<dependency>
+				<groupId>AXMLPrinter</groupId>
+				<artifactId>AXMLPrinter</artifactId>
+				<version>1.0</version>
+			</dependency>
+			<dependency>
+				<groupId>com.kylinworks</groupId>
+				<artifactId>PNGConverter</artifactId>
+				<version>1.0</version>
+			</dependency>
 			<dependency>
 				<groupId>log4j</groupId>
 				<artifactId>log4j</artifactId>
@@ -176,5 +187,7 @@
 		<module>project-pullxml</module>
 		<module>project-dynamic-interceptor</module>
 		<module>project-quartz</module>
+		<module>project-android-app</module>
+		<module>project-ios-app</module>
 	</modules>
 </project>
