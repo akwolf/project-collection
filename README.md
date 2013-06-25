@@ -3,7 +3,7 @@ project-clloection
 
 一些可以运行的功能项目工程
 
-project-android-app 		解析android应用相关的程序   
+project-android-app 		解析android应用相关的程序  
 project-axis1.4-client		axis1.4客户端调用的demo</br>
 project-axis1.4-server		axis1.4服务器端webservice</br>
 project-dom4j-offline		ipa中解析时plist无网络访问时，本地进行dtd验证的程序</br>
