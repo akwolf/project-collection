@@ -11,6 +11,7 @@ project-clloection
 **project-encrypt**				java加密相关  
 **project-excel**				使用jxl进行excel生成的程序  
 **project-extract-mp3**			对mp3中的元信息进行提取  
+**project-imgsilder**			可以上传图片并在jQuery轮播插件中进行切换的demo
 **project-ios-app**				解析iOS应用相关的程序  
 **project-jms-learning**		使用activeMQ进行jms的学习  
 **project-jsoup**				使用jsoup对ituns中qq图片地址的提取  
