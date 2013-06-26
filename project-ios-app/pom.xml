@@ -17,6 +17,14 @@
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>com.kylinworks</groupId>
+			<artifactId>PNGConverter</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.googlecode.plist</groupId>
+			<artifactId>dd-plist</artifactId>
+		</dependency>
 	</dependencies>
 	<build>
 		<finalName>project-ios-app</finalName>

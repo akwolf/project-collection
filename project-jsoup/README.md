@@ -1,0 +1,2 @@
+Exception in thread ¡°main¡± java.net.SocketTimeoutException: connect timed out at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+http://stackoverflow.com/questions/16649359/exception-in-thread-main-java-net-sockettimeoutexception-connect-timed-out-at

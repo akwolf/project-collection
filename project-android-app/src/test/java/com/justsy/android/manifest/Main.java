@@ -30,15 +30,12 @@ public class Main {
 
 		in.close();
 		System.out.println("done!!");
-		
-//		String name = "zhang.txt" ;
-//		System.out.println(name.substring(name.lastIndexOf(".")+1));
-		
-		
-		
+
+		//		String name = "zhang.txt" ;
+		//		System.out.println(name.substring(name.lastIndexOf(".")+1));
+
 	}
-	
-	
+
 	protected void writeFile(File file, InputStream in) throws IOException {
 		int tmp = 0;
 		FileOutputStream fos = new FileOutputStream(file);

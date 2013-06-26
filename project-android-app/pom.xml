@@ -22,8 +22,16 @@
 			<artifactId>AXMLPrinter</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.kylinworks</groupId>
-			<artifactId>PNGConverter</artifactId>
+			<groupId>com.google.android</groupId>
+			<artifactId>apktool</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>ant</groupId>
+			<artifactId>ant</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId>
 		</dependency>
 	</dependencies>
 	<build>
