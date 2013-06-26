@@ -8,6 +8,7 @@ project-clloection
 **project-axis1.4-server**		axis1.4服务器端webservice  
 **project-dom4j-offline**		ipa中解析时plist无网络访问时，本地进行dtd验证的程序  
 **project-dynamic-interceptor**	一个使用jdk 动态代理实现的简单拦截器程序  
+**project-encrypt**				java加密相关
 **project-excel**				使用jxl进行excel生成的程序  
 **project-extract-mp3**			对mp3中的元信息进行提取  
 **project-ios-app**				解析iOS应用相关的程序  

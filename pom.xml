@@ -229,5 +229,6 @@
 		<module>project-extract-mp3</module>
 		<module>project-jms-learning</module>
     <module>project-encrypt</module>
+    <module>project-upload-with-progress</module>
   </modules>
 </project>
