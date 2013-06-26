@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.akwolf.rbac.persistence.UserMapper">
+
+	<resultMap id="userResultMap" type="User"></resultMap>
+	<resultMap id="pageUserResultMap" type="PagerModel">
+		<result property="total" column="rc" javaType="int" />
+		<collection property="rows" ofType="User">
+			<id property="id" column="id" javaType="int" />
+			<result property="name" column="name" />
+			<result property="sex" column="sex" />
+			<result property="login" column="login" />
+			<result property="moNumber" column="moNumber" />
+			<result property="shortNumber" column="shortNumber" />
+			<result property="inTime" column="inTime" />
+			<result property="outTime" column="outTime" />
+			<association property="department" column="d.id"
+				javaType="Department">
+				<id property="id" column="departmentId" javaType="int" />
+				<result property="name" column="departmentName" javaType="string" />
+			</association>
+			<collection property="roles" ofType="Role">
+				<id property="id" column="roleId" javaType="int" />
+				<result property="name" column="roleName" javaType="string" />
+			</collection>
+		</collection>
+	</resultMap>
+
+	<sql id="userItem">u.id,u.name,u.sex,u.login,u.Monumber,u.shortNumber,u.inTime,u.outTime</sql>
+
+	<select id="getUserByNameAndPassword" parameterType="map"
+		resultType="User">
+		select * from users u join userroles ur on u.id = ur.userId
+		join roles r on ur.roleId = r.id join roleprivileges rp on
+		r.id=rp.roleId join privileges p on rp.privilegeId = p.id and u.login
+		= #{login} and u.password = #{password}
+	</select>
+
+	<select id="paginationUser" parameterType="map" resultMap="pageUserResultMap">
+		select
+		<include refid="userItem" />
+		,d.id as departmentId,d.name as departmentName,r.id as roleId,r.name
+		as
+		roleName,c.rc from
+		users u left join (select
+		count(*) as
+		rc from
+		users)
+		c on 1=1 left join
+		userroles ur on
+		ur.userId=u.id left join roles r on
+		r.id =
+		ur.roleId left
+		join
+		departments d on d.id = u.departmentId limit
+		#{start},#{rows}
+	</select>
+</mapper>

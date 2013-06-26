@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<typeAliases>
+		<!-- simple alias for full class name -->
+		<typeAlias alias="Department" type="com.akwolf.rbac.model.Department"/>
+		<typeAlias alias="Privilege" type="com.akwolf.rbac.model.Privilege"/>
+		<typeAlias alias="RolePrivilege" type="com.akwolf.rbac.model.RolePrivilege"/>
+		<typeAlias alias="Role" type="com.akwolf.rbac.model.Role"/>
+		<typeAlias alias="Session" type="com.akwolf.rbac.model.Session"/>
+		<typeAlias alias="User" type="com.akwolf.rbac.model.User"/>
+		<typeAlias alias="UserRole" type="com.akwolf.rbac.model.UserRole"/>
+		<typeAlias alias="PagerModel" type="com.akwolf.rbac.model.PagerModel"/>
+	</typeAliases>
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/et_rbac"/>
+                <property name="username" value="zhangh"/>
+                <property name="password" value="123456"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <mapper resource="com/akwolf/rbac/persistence/SessionMapper.xml"/>
+        <mapper resource="com/akwolf/rbac/persistence/UserMapper.xml"/>
+        <mapper resource="com/akwolf/rbac/persistence/PrivilegeMapper.xml"/>
+    </mappers>
+</configuration>

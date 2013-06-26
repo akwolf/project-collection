@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.akwolf.rbac.persistence.PrivilegeMapper">
+
+
+	<resultMap type="Privilege" id="privilegeResultMap">
+		<id property="id" column="id" />
+		<result property="name" column="name" />
+		<result property="iconUrl" column="iconUrl" />
+		<result property="sort" column="sort" />
+		<result property="urls" column="urls" />
+		<association property="parent" column="parentId" javaType="Privilege">
+			<id property="id" column="parentId" />
+		</association>
+	</resultMap>
+
+	<resultMap type="Privilege" id="privilegeChildrenResultMap">
+		<id property="id" column="id" />
+		<result property="name" column="name" />
+		<result property="iconUrl" column="iconUrl" />
+		<result property="sort" column="sort" />
+		<result property="urls" column="urls" />
+		<collection property="children" column="parentId"
+			select="getPrivilegesByParent"></collection>
+	</resultMap>
+
+	<select id="getPrivilegesByUser" parameterType="int" resultMap="privilegeChildrenResultMap">
+
+		select p.* from privileges p join roleprivileges rp on p.id = rp.privilegeId and rp.roleId in( select 
+		r.id from roles r join userroles ur on r.id = ur.roleId and ur.userId = #{id} 
+		) and p.parentId = 0 
+		
+	</select>
+
+	<!-- select pri.*,par.name as parentName,par.iconUrl as parentIconUrl,par.sort 
+		as parentSort,par.urls as parentUrls from privileges pri join privileges 
+		par on pri.parentId = par.id where pri.parentId in ( select p.id from privileges 
+		p join roleprivileges rp on p.id = rp.privilegeId and rp.roleId in( select 
+		r.id from roles r join userroles ur on r.id = ur.roleId and ur.userId = #{id} 
+		) and p.parentId = 0 ) -->
+
+	<select id="getPrivilegesByParent" parameterType="int"
+		resultMap="privilegeResultMap">
+		select p.* from privileges p where p.parentId = #{parentId}
+	</select>
+
+
+
+</mapper>
