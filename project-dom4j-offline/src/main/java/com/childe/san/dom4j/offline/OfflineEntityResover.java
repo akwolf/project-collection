@@ -36,7 +36,7 @@ public class OfflineEntityResover implements EntityResolver, Serializable {
 		return prefix;
 	}
 
-	//	@Override
+	@Override
 	public InputSource resolveEntity(String publicId, String systemId) throws SAXException, IOException {
 		if ((systemId != null) && (systemId.length() > 0)) {
 			if ((uriPrefix != null) && (systemId.indexOf(':') <= 0)) {

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+            http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd
+            http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"
+	default-autowire="byName">
+
+
+	<context:annotation-config />
+
+	<beans profile="development">
+		<!-- datasource pool -->
+		<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+			destroy-method="close">
+			<property name="driverClassName" value="${quake.db.driver}" />
+			<property name="url" value="${quake.db.url}" />
+			<property name="username" value="${quake.db.username}" />
+			<property name="password" value="${quake.db.password}" />
+			<property name="initialSize" value="${quake.db.initialSize}" />
+			<property name="maxActive" value="${quake.db.maxActive}" />
+			<property name="maxIdle" value="${quake.db.maxIdle}" />
+			<property name="maxWait" value="${quake.db.maxWait}" />
+			<property name="minIdle" value="0" />
+			<property name="timeBetweenEvictionRunsMillis" value="60000" />
+			<property name="numTestsPerEvictionRun" value="${quake.db.maxActive}" />
+			<property name="testOnBorrow" value="false" />
+			<property name="testWhileIdle" value="true" />
+			<property name="validationQuery" value="${quake.db.validationQuery}" />
+			<property name="removeAbandoned" value="false" />
+			<property name="removeAbandonedTimeout" value="180" />
+		</bean>
+	</beans>
+
+
+
+	<beans profile="production">
+		<jee:jndi-lookup id="dataSource" jndi-name="${quake.db.jndi}" />
+	</beans>
+
+</beans>            
