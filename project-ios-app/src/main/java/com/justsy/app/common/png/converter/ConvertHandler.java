@@ -76,7 +76,7 @@ public class ConvertHandler {
 			byte[] nPNGHeader = new byte[8];
 			file.read(nPNGHeader);
 
-			boolean bWithCgBI = false;
+//			boolean bWithCgBI = false;
 
 			this.trunks = new ArrayList<PNGTrunk>();
 
@@ -87,9 +87,9 @@ public class ConvertHandler {
 					trunk = PNGTrunk.generateTrunk(file);
 					this.trunks.add(trunk);
 
-					if (trunk.getName().equalsIgnoreCase("CgBI")) {
-						bWithCgBI = true;
-					}
+					//					if (trunk.getName().equalsIgnoreCase("CgBI")) {
+					//						bWithCgBI = true;
+					//					}
 				} while (!trunk.getName().equalsIgnoreCase("IEND"));
 			}
 			file.close();

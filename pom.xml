@@ -194,6 +194,7 @@
 				<artifactId>jta</artifactId>
 				<version>1.1</version>
 			</dependency>
+			<!-- logging -->
 			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-api</artifactId>
@@ -235,6 +236,17 @@
 				<groupId>commons-dbcp</groupId>
 				<artifactId>commons-dbcp</artifactId>
 				<version>1.4</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-dbutils</groupId>
+				<artifactId>commons-dbutils</artifactId>
+				<version>1.5</version>
+			</dependency>
+			<!-- ldap -->
+			<dependency>
+				<groupId>com.novell.ldap</groupId>
+				<artifactId>jldap</artifactId>
+				<version>4.3</version>
 			</dependency>
 			<!-- json -->
 			<dependency>
@@ -286,6 +298,17 @@
 				<groupId>org.jtester</groupId>
 				<artifactId>jtester</artifactId>
 				<version>1.1.8</version>
+			</dependency>
+			<!-- commons -->
+			<dependency>
+				<groupId>commons-lang</groupId>
+				<artifactId>commons-lang</artifactId>
+				<version>2.6</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-beanutils</groupId>
+				<artifactId>commons-beanutils</artifactId>
+				<version>1.8.3</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
@@ -346,5 +369,7 @@
 		<module>project-imgsilder</module>
 		<module>project-rbac</module>
 		<module>project-multi-env-deploy</module>
+		<module>project-tree</module>
+		<module>project-ldap</module>
 	</modules>
 </project>
