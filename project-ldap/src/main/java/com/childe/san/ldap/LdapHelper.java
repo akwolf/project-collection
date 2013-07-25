@@ -18,17 +18,24 @@ import com.novell.ldap.LDAPException;
 import com.novell.ldap.LDAPSearchResults;
 
 /**
+ * 参考
+ * http://www.novell.com/documentation/developer/samplecode/jldap_sample/
+ * 
+ * http://www.micmiu.com/opensource/java-ldap-demo/
+ * 
  * @author zhangh
  * @createTime 2013-7-22 上午11:03:08
  */
+// TODO:对查询组进行排序
+//
 public class LdapHelper {
 
 	private static final String PROVIDER_URL = "10.88.100.173";
 	private static final int PROVIDER_PORT = 389;
-	private static final String SECURITY_PRINCIPAL = "cn=**,cn=**";
+	private static final String SECURITY_PRINCIPAL = "cn=gtjaldap,cn=ibmpolicies";
 	private static final String SECURITY_CREDENTIALS = "****";
 
-	/** 组需要获取的属性 */
+	/** 组需要从ldap中获取的属性 */
 	private static final String[] GROUP_ATTRS = { "depID", "xPath", "cn", "depGrade", "adminID" };
 	/** 人员需要获取的属性 */
 	private static final String[] PERSON_ATTRS = { "uid", "cn", "mobile", "mail", "mdevices", "dept1Code" };
