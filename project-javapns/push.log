@@ -1,0 +1,183 @@
+2013-07-29 13:43:55,365 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - -----PropertiesManager构建--------
+2013-07-29 13:54:56,599 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - -----PropertiesManager构建--------
+2013-07-29 14:01:16,829 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - -----PropertiesManager构建--------
+2013-07-29 14:01:16,830 [main] [com.childe.san.javapns.util.PropertiesManager] [DEBUG] - config.properties : null
+2013-07-29 14:03:43,213 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - -----PropertiesManager构建--------
+2013-07-29 14:03:43,214 [main] [com.childe.san.javapns.util.PropertiesManager] [DEBUG] - config.properties : /E:/workspace/project-parent/project-javapns/target/classes/
+2013-07-29 14:05:33,142 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - -----PropertiesManager构建--------
+2013-07-29 14:05:33,143 [main] [com.childe.san.javapns.util.PropertiesManager] [DEBUG] - config.properties : /E:/workspace/project-parent/project-javapns/target/classes/config.properties
+2013-07-29 14:05:33,143 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - ----key:----fileName
+2013-07-29 14:05:33,143 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - ----value:----aps_push_cert.p12
+2013-07-29 14:05:33,144 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - ----key:----filePassword
+2013-07-29 14:05:33,144 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - ----value:----SW50ZXJzdGFnZTEyMw==
+2013-07-29 14:05:33,175 [main] [com.childe.san.javapns.PushByAPNS] [INFO] - ----KEYSTORE:---/E:/workspace/project-parent/project-javapns/target/classes/aps_push_cert.p12
+2013-07-29 14:05:33,175 [main] [com.childe.san.javapns.PushByAPNS] [INFO] - -----Token:-----fb9ec2b85387cfa45168b7cad969274228eced5b48f967925dfefd4269756f56----message:-----hello----badge:----10-------pushType:------1------KEYSTORE:-------/E:/workspace/project-parent/project-javapns/target/classes/aps_push_cert.p12------KEYPASSWORD:-------Interstage123
+2013-07-29 14:05:33,185 [main] [javapns.notification.Payload] [DEBUG] - Adding alert [hello]
+2013-07-29 14:05:33,185 [main] [javapns.notification.Payload] [DEBUG] - Adding badge [10]
+2013-07-29 14:05:33,194 [main] [javapns.notification.Payload] [DEBUG] - Adding sound [Default]
+2013-07-29 14:05:33,610 [main] [javapns.communication.ConnectionToAppleServer] [DEBUG] - Creating SSLSocketFactory
+2013-07-29 14:05:33,638 [main] [javapns.communication.ConnectionToAppleServer] [DEBUG] - Creating SSLSocket to gateway.push.apple.com:2195
+2013-07-29 14:05:34,607 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Initialized Connection to Host: [gateway.push.apple.com] Port: [2195]: 1e328e0[SSL_NULL_WITH_NULL_NULL: Socket[addr=gateway.push.apple.com/17.149.36.243,port=2195,localport=56505]]
+2013-07-29 14:05:34,608 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Building Raw message from deviceToken and payload
+2013-07-29 14:05:34,609 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Built raw message ID 1 of total length 99
+2013-07-29 14:05:34,609 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Attempting to send notification: {"aps":{"sound":"Default","alert":"hello","badge":10}}
+2013-07-29 14:05:34,609 [main] [javapns.notification.PushNotificationManager] [DEBUG] -   to device: fb9ec2b85387cfa45168b7cad969274228eced5b48f967925dfefd4269756f56
+2013-07-29 14:05:35,725 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Flushing
+2013-07-29 14:05:35,725 [main] [javapns.notification.PushNotificationManager] [DEBUG] - At this point, the entire 99-bytes message has been streamed out successfully through the SSL connection
+2013-07-29 14:05:35,726 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Notification sent on first attempt
+2013-07-29 14:05:35,726 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Reading responses
+2013-07-29 14:05:40,747 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Closing connection
+2013-07-29 14:06:08,029 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - -----PropertiesManager构建--------
+2013-07-29 14:06:08,030 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - ----key:----fileName
+2013-07-29 14:06:08,030 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - ----value:----aps_push_cert.p12
+2013-07-29 14:06:08,030 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - ----key:----filePassword
+2013-07-29 14:06:08,031 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - ----value:----SW50ZXJzdGFnZTEyMw==
+2013-07-29 14:06:08,037 [main] [com.childe.san.javapns.PushByAPNS] [INFO] - ----KEYSTORE:---/E:/workspace/project-parent/project-javapns/target/classes/aps_push_cert.p12
+2013-07-29 14:06:08,037 [main] [com.childe.san.javapns.PushByAPNS] [INFO] - -----Token:-----fb9ec2b85387cfa45168b7cad969274228eced5b48f967925dfefd4269756f56----message:-----hello----badge:----10-------pushType:------1------KEYSTORE:-------/E:/workspace/project-parent/project-javapns/target/classes/aps_push_cert.p12------KEYPASSWORD:-------Interstage123
+2013-07-29 14:06:08,047 [main] [javapns.notification.Payload] [DEBUG] - Adding alert [hello]
+2013-07-29 14:06:08,047 [main] [javapns.notification.Payload] [DEBUG] - Adding badge [10]
+2013-07-29 14:06:08,048 [main] [javapns.notification.Payload] [DEBUG] - Adding sound [Default]
+2013-07-29 14:06:08,290 [main] [javapns.communication.ConnectionToAppleServer] [DEBUG] - Creating SSLSocketFactory
+2013-07-29 14:06:08,317 [main] [javapns.communication.ConnectionToAppleServer] [DEBUG] - Creating SSLSocket to gateway.push.apple.com:2195
+2013-07-29 14:06:08,826 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Initialized Connection to Host: [gateway.push.apple.com] Port: [2195]: 1e328e0[SSL_NULL_WITH_NULL_NULL: Socket[addr=gateway.push.apple.com/17.149.36.243,port=2195,localport=56509]]
+2013-07-29 14:06:08,827 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Building Raw message from deviceToken and payload
+2013-07-29 14:06:08,827 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Built raw message ID 1 of total length 99
+2013-07-29 14:06:08,827 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Attempting to send notification: {"aps":{"sound":"Default","alert":"hello","badge":10}}
+2013-07-29 14:06:08,828 [main] [javapns.notification.PushNotificationManager] [DEBUG] -   to device: fb9ec2b85387cfa45168b7cad969274228eced5b48f967925dfefd4269756f56
+2013-07-29 14:06:09,670 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Flushing
+2013-07-29 14:06:09,670 [main] [javapns.notification.PushNotificationManager] [DEBUG] - At this point, the entire 99-bytes message has been streamed out successfully through the SSL connection
+2013-07-29 14:06:09,670 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Notification sent on first attempt
+2013-07-29 14:06:09,670 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Reading responses
+2013-07-29 14:06:14,671 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Closing connection
+2013-07-29 14:06:59,738 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - -----PropertiesManager构建--------
+2013-07-29 14:06:59,739 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - ----key:----fileName
+2013-07-29 14:06:59,740 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - ----value:----aps_push_cert.p12
+2013-07-29 14:06:59,740 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - ----key:----filePassword
+2013-07-29 14:06:59,740 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - ----value:----SW50ZXJzdGFnZTEyMw==
+2013-07-29 14:06:59,746 [main] [com.childe.san.javapns.PushByAPNS] [INFO] - ----KEYSTORE:---/E:/workspace/project-parent/project-javapns/target/classes/aps_push_cert.p12
+2013-07-29 14:06:59,747 [main] [com.childe.san.javapns.PushByAPNS] [INFO] - -----Token:-----fb9ec2b85387cfa45168b7cad969274228eced5b48f967925dfefd4269756f56----message:-----hello----badge:----10-------pushType:------1------KEYSTORE:-------/E:/workspace/project-parent/project-javapns/target/classes/aps_push_cert.p12------KEYPASSWORD:-------Interstage123
+2013-07-29 14:06:59,758 [main] [javapns.notification.Payload] [DEBUG] - Adding alert [hello]
+2013-07-29 14:06:59,758 [main] [javapns.notification.Payload] [DEBUG] - Adding badge [10]
+2013-07-29 14:06:59,759 [main] [javapns.notification.Payload] [DEBUG] - Adding sound [Default]
+2013-07-29 14:07:00,008 [main] [javapns.communication.ConnectionToAppleServer] [DEBUG] - Creating SSLSocketFactory
+2013-07-29 14:07:00,036 [main] [javapns.communication.ConnectionToAppleServer] [DEBUG] - Creating SSLSocket to gateway.push.apple.com:2195
+2013-07-29 14:07:00,479 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Initialized Connection to Host: [gateway.push.apple.com] Port: [2195]: 1e328e0[SSL_NULL_WITH_NULL_NULL: Socket[addr=gateway.push.apple.com/17.149.35.167,port=2195,localport=56512]]
+2013-07-29 14:07:00,480 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Building Raw message from deviceToken and payload
+2013-07-29 14:07:00,480 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Built raw message ID 1 of total length 99
+2013-07-29 14:07:00,480 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Attempting to send notification: {"aps":{"sound":"Default","alert":"hello","badge":10}}
+2013-07-29 14:07:00,480 [main] [javapns.notification.PushNotificationManager] [DEBUG] -   to device: fb9ec2b85387cfa45168b7cad969274228eced5b48f967925dfefd4269756f56
+2013-07-29 14:07:01,096 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Flushing
+2013-07-29 14:07:01,096 [main] [javapns.notification.PushNotificationManager] [DEBUG] - At this point, the entire 99-bytes message has been streamed out successfully through the SSL connection
+2013-07-29 14:07:01,096 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Notification sent on first attempt
+2013-07-29 14:07:01,096 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Reading responses
+2013-07-29 14:07:06,097 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Closing connection
+2013-07-29 14:07:21,870 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - -----PropertiesManager构建--------
+2013-07-29 14:07:21,871 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - ----key:----fileName
+2013-07-29 14:07:21,871 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - ----value:----aps_push_cert.p12
+2013-07-29 14:07:21,872 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - ----key:----filePassword
+2013-07-29 14:07:21,872 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - ----value:----SW50ZXJzdGFnZTEyMw==
+2013-07-29 14:07:21,877 [main] [com.childe.san.javapns.PushByAPNS] [INFO] - ----KEYSTORE:---/E:/workspace/project-parent/project-javapns/target/classes/aps_push_cert.p12
+2013-07-29 14:07:21,877 [main] [com.childe.san.javapns.PushByAPNS] [INFO] - -----Token:-----fb9ec2b85387cfa45168b7cad969274228eced5b48f967925dfefd4269756f56----message:-----hello----badge:----100-------pushType:------1------KEYSTORE:-------/E:/workspace/project-parent/project-javapns/target/classes/aps_push_cert.p12------KEYPASSWORD:-------Interstage123
+2013-07-29 14:07:21,888 [main] [javapns.notification.Payload] [DEBUG] - Adding alert [hello]
+2013-07-29 14:07:21,888 [main] [javapns.notification.Payload] [DEBUG] - Adding badge [100]
+2013-07-29 14:07:21,889 [main] [javapns.notification.Payload] [DEBUG] - Adding sound [Default]
+2013-07-29 14:07:22,132 [main] [javapns.communication.ConnectionToAppleServer] [DEBUG] - Creating SSLSocketFactory
+2013-07-29 14:07:22,159 [main] [javapns.communication.ConnectionToAppleServer] [DEBUG] - Creating SSLSocket to gateway.push.apple.com:2195
+2013-07-29 14:07:22,596 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Initialized Connection to Host: [gateway.push.apple.com] Port: [2195]: 90c06f[SSL_NULL_WITH_NULL_NULL: Socket[addr=gateway.push.apple.com/17.149.35.167,port=2195,localport=56519]]
+2013-07-29 14:07:22,598 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Building Raw message from deviceToken and payload
+2013-07-29 14:07:22,598 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Built raw message ID 1 of total length 100
+2013-07-29 14:07:22,598 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Attempting to send notification: {"aps":{"sound":"Default","alert":"hello","badge":100}}
+2013-07-29 14:07:22,598 [main] [javapns.notification.PushNotificationManager] [DEBUG] -   to device: fb9ec2b85387cfa45168b7cad969274228eced5b48f967925dfefd4269756f56
+2013-07-29 14:07:23,284 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Flushing
+2013-07-29 14:07:23,284 [main] [javapns.notification.PushNotificationManager] [DEBUG] - At this point, the entire 100-bytes message has been streamed out successfully through the SSL connection
+2013-07-29 14:07:23,284 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Notification sent on first attempt
+2013-07-29 14:07:23,284 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Reading responses
+2013-07-29 14:07:28,286 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Closing connection
+2013-07-29 14:07:35,229 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - -----PropertiesManager构建--------
+2013-07-29 14:07:35,230 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - ----key:----fileName
+2013-07-29 14:07:35,230 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - ----value:----aps_push_cert.p12
+2013-07-29 14:07:35,230 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - ----key:----filePassword
+2013-07-29 14:07:35,231 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - ----value:----SW50ZXJzdGFnZTEyMw==
+2013-07-29 14:07:35,236 [main] [com.childe.san.javapns.PushByAPNS] [INFO] - ----KEYSTORE:---/E:/workspace/project-parent/project-javapns/target/classes/aps_push_cert.p12
+2013-07-29 14:07:35,236 [main] [com.childe.san.javapns.PushByAPNS] [INFO] - -----Token:-----fb9ec2b85387cfa45168b7cad969274228eced5b48f967925dfefd4269756f56----message:-----hello----badge:----100000-------pushType:------1------KEYSTORE:-------/E:/workspace/project-parent/project-javapns/target/classes/aps_push_cert.p12------KEYPASSWORD:-------Interstage123
+2013-07-29 14:07:35,247 [main] [javapns.notification.Payload] [DEBUG] - Adding alert [hello]
+2013-07-29 14:07:35,247 [main] [javapns.notification.Payload] [DEBUG] - Adding badge [100000]
+2013-07-29 14:07:35,247 [main] [javapns.notification.Payload] [DEBUG] - Adding sound [Default]
+2013-07-29 14:07:35,483 [main] [javapns.communication.ConnectionToAppleServer] [DEBUG] - Creating SSLSocketFactory
+2013-07-29 14:07:35,510 [main] [javapns.communication.ConnectionToAppleServer] [DEBUG] - Creating SSLSocket to gateway.push.apple.com:2195
+2013-07-29 14:07:36,066 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Initialized Connection to Host: [gateway.push.apple.com] Port: [2195]: 90c06f[SSL_NULL_WITH_NULL_NULL: Socket[addr=gateway.push.apple.com/17.149.35.167,port=2195,localport=56521]]
+2013-07-29 14:07:36,067 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Building Raw message from deviceToken and payload
+2013-07-29 14:07:36,067 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Built raw message ID 1 of total length 103
+2013-07-29 14:07:36,067 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Attempting to send notification: {"aps":{"sound":"Default","alert":"hello","badge":100000}}
+2013-07-29 14:07:36,067 [main] [javapns.notification.PushNotificationManager] [DEBUG] -   to device: fb9ec2b85387cfa45168b7cad969274228eced5b48f967925dfefd4269756f56
+2013-07-29 14:07:36,982 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Flushing
+2013-07-29 14:07:36,983 [main] [javapns.notification.PushNotificationManager] [DEBUG] - At this point, the entire 103-bytes message has been streamed out successfully through the SSL connection
+2013-07-29 14:07:36,983 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Notification sent on first attempt
+2013-07-29 14:07:36,983 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Reading responses
+2013-07-29 14:07:41,984 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Closing connection
+2013-07-29 15:06:56,709 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - -----PropertiesManager构建--------
+2013-07-29 15:06:56,719 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - ----key:----fileName
+2013-07-29 15:06:56,720 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - ----value:----aps_push_cert.p12
+2013-07-29 15:06:56,720 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - ----key:----filePassword
+2013-07-29 15:06:56,720 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - ----value:----SW50ZXJzdGFnZTEyMw==
+2013-07-29 15:06:56,726 [main] [com.childe.san.javapns.PushByAPNS] [INFO] - ----KEYSTORE:---/E:/workspace/project-parent/project-javapns/target/classes/aps_push_cert.p12
+2013-07-29 15:06:56,726 [main] [com.childe.san.javapns.PushByAPNS] [INFO] - -----Token:-----fb9ec2b85387cfa45168b7cad969274228eced5b48f967925dfefd4269756f56----message:-----hello----badge:----1000-------pushType:------1------KEYSTORE:-------/E:/workspace/project-parent/project-javapns/target/classes/aps_push_cert.p12------KEYPASSWORD:-------Interstage123
+2013-07-29 15:06:56,737 [main] [javapns.notification.Payload] [DEBUG] - Adding alert [hello]
+2013-07-29 15:06:56,737 [main] [javapns.notification.Payload] [DEBUG] - Adding badge [1000]
+2013-07-29 15:06:56,737 [main] [javapns.notification.Payload] [DEBUG] - Adding sound [Default]
+2013-07-29 15:06:56,981 [main] [javapns.communication.ConnectionToAppleServer] [DEBUG] - Creating SSLSocketFactory
+2013-07-29 15:06:57,011 [main] [javapns.communication.ConnectionToAppleServer] [DEBUG] - Creating SSLSocket to gateway.push.apple.com:2195
+2013-07-29 15:06:57,716 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Initialized Connection to Host: [gateway.push.apple.com] Port: [2195]: 1e328e0[SSL_NULL_WITH_NULL_NULL: Socket[addr=gateway.push.apple.com/17.172.233.153,port=2195,localport=58110]]
+2013-07-29 15:06:57,717 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Building Raw message from deviceToken and payload
+2013-07-29 15:06:57,717 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Built raw message ID 1 of total length 101
+2013-07-29 15:06:57,717 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Attempting to send notification: {"aps":{"sound":"Default","alert":"hello","badge":1000}}
+2013-07-29 15:06:57,717 [main] [javapns.notification.PushNotificationManager] [DEBUG] -   to device: fb9ec2b85387cfa45168b7cad969274228eced5b48f967925dfefd4269756f56
+2013-07-29 15:06:58,456 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Flushing
+2013-07-29 15:06:58,456 [main] [javapns.notification.PushNotificationManager] [DEBUG] - At this point, the entire 101-bytes message has been streamed out successfully through the SSL connection
+2013-07-29 15:06:58,456 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Notification sent on first attempt
+2013-07-29 15:06:58,456 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Reading responses
+2013-07-29 15:07:03,457 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Closing connection
+2013-07-29 15:07:13,626 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - -----PropertiesManager构建--------
+2013-07-29 15:07:13,627 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - ----key:----fileName
+2013-07-29 15:07:13,627 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - ----value:----aps_push_cert.p12
+2013-07-29 15:07:13,628 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - ----key:----filePassword
+2013-07-29 15:07:13,628 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - ----value:----SW50ZXJzdGFnZTEyMw==
+2013-07-29 15:07:13,635 [main] [com.childe.san.javapns.PushByAPNS] [INFO] - ----KEYSTORE:---/E:/workspace/project-parent/project-javapns/target/classes/aps_push_cert.p12
+2013-07-29 15:07:13,635 [main] [com.childe.san.javapns.PushByAPNS] [INFO] - -----Token:-----fb9ec2b85387cfa45168b7cad969274228eced5b48f967925dfefd4269756f56----message:-----hello----badge:----1000-------pushType:------1------KEYSTORE:-------/E:/workspace/project-parent/project-javapns/target/classes/aps_push_cert.p12------KEYPASSWORD:-------Interstage123
+2013-07-29 15:07:13,646 [main] [javapns.notification.Payload] [DEBUG] - Adding alert [hello]
+2013-07-29 15:07:13,646 [main] [javapns.notification.Payload] [DEBUG] - Adding badge [1000]
+2013-07-29 15:07:13,647 [main] [javapns.notification.Payload] [DEBUG] - Adding sound [Default]
+2013-07-29 15:07:13,886 [main] [javapns.communication.ConnectionToAppleServer] [DEBUG] - Creating SSLSocketFactory
+2013-07-29 15:07:13,914 [main] [javapns.communication.ConnectionToAppleServer] [DEBUG] - Creating SSLSocket to gateway.push.apple.com:2195
+2013-07-29 15:07:14,404 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Initialized Connection to Host: [gateway.push.apple.com] Port: [2195]: 1e328e0[SSL_NULL_WITH_NULL_NULL: Socket[addr=gateway.push.apple.com/17.172.233.153,port=2195,localport=58112]]
+2013-07-29 15:07:14,405 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Building Raw message from deviceToken and payload
+2013-07-29 15:07:14,405 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Built raw message ID 1 of total length 101
+2013-07-29 15:07:14,405 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Attempting to send notification: {"aps":{"sound":"Default","alert":"hello","badge":1000}}
+2013-07-29 15:07:14,405 [main] [javapns.notification.PushNotificationManager] [DEBUG] -   to device: fb9ec2b85387cfa45168b7cad969274228eced5b48f967925dfefd4269756f56
+2013-07-29 15:07:15,252 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Flushing
+2013-07-29 15:07:15,252 [main] [javapns.notification.PushNotificationManager] [DEBUG] - At this point, the entire 101-bytes message has been streamed out successfully through the SSL connection
+2013-07-29 15:07:15,252 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Notification sent on first attempt
+2013-07-29 15:07:15,252 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Reading responses
+2013-07-29 15:07:20,253 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Closing connection
+2013-07-29 15:09:16,385 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - -----PropertiesManager构建--------
+2013-07-29 15:09:16,386 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - ----key:----fileName
+2013-07-29 15:09:16,386 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - ----value:----aps_push_cert.p12
+2013-07-29 15:09:16,387 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - ----key:----filePassword
+2013-07-29 15:09:16,387 [main] [com.childe.san.javapns.util.PropertiesManager] [INFO] - ----value:----SW50ZXJzdGFnZTEyMw==
+2013-07-29 15:09:16,393 [main] [com.childe.san.javapns.PushByAPNS] [INFO] - ----KEYSTORE:---/E:/workspace/project-parent/project-javapns/target/classes/aps_push_cert.p12
+2013-07-29 15:09:16,393 [main] [com.childe.san.javapns.PushByAPNS] [INFO] - -----Token:-----fb9ec2b85387cfa45168b7cad969274228eced5b48f967925dfefd4269756f56----message:-----hello111----badge:----1000-------pushType:------1------KEYSTORE:-------/E:/workspace/project-parent/project-javapns/target/classes/aps_push_cert.p12------KEYPASSWORD:-------Interstage123
+2013-07-29 15:09:16,403 [main] [javapns.notification.Payload] [DEBUG] - Adding alert [hello111]
+2013-07-29 15:09:16,404 [main] [javapns.notification.Payload] [DEBUG] - Adding badge [1000]
+2013-07-29 15:09:16,404 [main] [javapns.notification.Payload] [DEBUG] - Adding sound [Default]
+2013-07-29 15:09:16,648 [main] [javapns.communication.ConnectionToAppleServer] [DEBUG] - Creating SSLSocketFactory
+2013-07-29 15:09:16,677 [main] [javapns.communication.ConnectionToAppleServer] [DEBUG] - Creating SSLSocket to gateway.push.apple.com:2195
+2013-07-29 15:09:17,212 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Initialized Connection to Host: [gateway.push.apple.com] Port: [2195]: 1a001ff[SSL_NULL_WITH_NULL_NULL: Socket[addr=gateway.push.apple.com/17.172.233.163,port=2195,localport=58122]]
+2013-07-29 15:09:17,213 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Building Raw message from deviceToken and payload
+2013-07-29 15:09:17,213 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Built raw message ID 1 of total length 104
+2013-07-29 15:09:17,213 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Attempting to send notification: {"aps":{"sound":"Default","alert":"hello111","badge":1000}}
+2013-07-29 15:09:17,214 [main] [javapns.notification.PushNotificationManager] [DEBUG] -   to device: fb9ec2b85387cfa45168b7cad969274228eced5b48f967925dfefd4269756f56
+2013-07-29 15:09:17,961 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Flushing
+2013-07-29 15:09:17,961 [main] [javapns.notification.PushNotificationManager] [DEBUG] - At this point, the entire 104-bytes message has been streamed out successfully through the SSL connection
+2013-07-29 15:09:17,961 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Notification sent on first attempt
+2013-07-29 15:09:17,961 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Reading responses
+2013-07-29 15:09:22,962 [main] [javapns.notification.PushNotificationManager] [DEBUG] - Closing connection

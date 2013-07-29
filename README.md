@@ -13,6 +13,7 @@ project-clloection
 **project-extract-mp3**			对mp3中的元信息进行提取  
 **project-imgsilder**			可以上传图片并在jQuery轮播插件中进行切换的demo  
 **project-ios-app**				解析iOS应用相关的程序  
+**project-javapns**				使用javaPNS进行简单的推送demo  
 **project-jms-learning**		使用activeMQ进行jms的学习  
 **project-jsoup**				使用jsoup对ituns中qq图片地址的提取  
 **project-ldap**				使用jldap进行ldap数据查询，GTJALdap.java使用JDKapi实现，仅作参考  

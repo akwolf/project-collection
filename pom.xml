@@ -310,7 +310,24 @@
 				<artifactId>commons-beanutils</artifactId>
 				<version>1.8.3</version>
 			</dependency>
+			<dependency>
+				<groupId>commons-codec</groupId>
+				<artifactId>commons-codec</artifactId>
+				<version>1.8</version>
+			</dependency>
+			<!-- encrypt -->
+			<dependency>
+				<groupId>org.bouncycastle</groupId>
+				<artifactId>bcprov-jdk15</artifactId>
+				<version>1.46</version>
+			</dependency>
+			<dependency>
+				<groupId>javapns</groupId>
+				<artifactId>javapns</artifactId>
+				<version>2.2</version>
+			</dependency>
 		</dependencies>
+
 	</dependencyManagement>
 	<build>
 		<plugins>
@@ -371,5 +388,6 @@
 		<module>project-multi-env-deploy</module>
 		<module>project-tree</module>
 		<module>project-ldap</module>
+		<module>project-javapns</module>
 	</modules>
 </project>
