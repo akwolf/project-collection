@@ -10,6 +10,9 @@ import com.childe.san.tree.db.DatabaseUtils;
 import com.childe.san.tree.dto.TreeNode;
 
 /**
+ * 使用存储过程实现的tree
+ * http://explainextended.com/2009/03/17/hierarchical-queries-in-mysql/
+ * 
  * @author zhangh
  * @createTime 2013-7-18 下午5:24:21
  */

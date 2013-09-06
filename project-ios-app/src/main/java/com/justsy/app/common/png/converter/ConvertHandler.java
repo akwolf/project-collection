@@ -229,7 +229,8 @@ public class ConvertHandler {
 		} catch (IOException e) {
 			System.out.println("Error --" + e.toString());
 		}
-		return new File(newFileName);
+//		return new File(newFileName);
+		return new File(pngFile.getPath()) ;
 	}
 
 	private void convertDirectory(File dir) {
